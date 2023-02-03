@@ -36,118 +36,70 @@ local Section3 = Tab3:Section({
 Section:Button({
    Text = "Nuke Shop",
    Callback = function()
-local args = {
-    [1] = "Nuke Shop"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3989, 638, -4247)
    end
 })
 
 Section:Button({
    Text = "City",
    Callback = function()
-local args = {
-    [1] = "City"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3882, 636, -3726)
    end
 })
 
 Section:Button({
    Text = "Jungle",
    Callback = function()
-local args = {
-    [1] = "Jungle"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3958, 635, -3376)
    end
 })
 
 Section:Button({
    Text = "Desert",
    Callback = function()
-local args = {
-    [1] = "Desert"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4354, 635, -3115)
    end
 })
 
 Section:Button({
    Text = "Beach",
    Callback = function()
-local args = {
-    [1] = "Beach"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4897, 635, -2856)
    end
 })
 
 Section:Button({
    Text = "Site Deep Blue",
    Callback = function()
-local args = {
-    [1] = "Site Deep Blue"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11293, 105, -3086)
    end
 })
 
 Section:Button({
    Text = "Test Lab 33",
    Callback = function()
-local args = {
-    [1] = "Test Lab 33"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4342, 637, -2181)
    end
 })
 
 Section:Button({
    Text = "Volcano HQ",
    Callback = function()
-local args = {
-    [1] = "Volcano HQ"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
-
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4006, 637, -2041)
    end
 })
 
 Section2:Button({
    Text = "Moon Base",
    Callback = function()
-local args = {
-    [1] = "Moon Base"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3767, 855, 3335)
    end
 })
 
 Section2:Button({
    Text = "Excavation Site 42",
    Callback = function()
-local args = {
-    [1] = "Excavation Site 42"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_knit@1.4.7"):WaitForChild("knit"):WaitForChild("Services"):WaitForChild("TeleporterService"):WaitForChild("RF"):WaitForChild("TeleportTo"):InvokeServer(unpack(args))
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3773, 857, 3169)
    end
 })
 
