@@ -134,7 +134,7 @@ Section3:Button({
 
 Section4:Slider({
    Text = "Speed",
-   Default = 16,
+   Default = 25,
    Minimum = 10,
    Maximum = 300,
    Callback = function(speed)
