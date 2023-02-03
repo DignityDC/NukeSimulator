@@ -1,6 +1,7 @@
 local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/main/Library.lua"))()
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua'))()
 local equipBestRemote = game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.NukeService.RE.EquipBest
+local claimNormalChest = game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.ChestService.RE.Claim
 Library.Theme = "Dark"
 local Flags = Library.Flags
 
@@ -130,6 +131,14 @@ Section3:Button({
    Text = "Cybertopia",
    Callback = function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8316, 1581, 1542)
+   end
+})
+
+Section4:Button({
+   Text = "Auto Claim Chests",
+   Callback = function()
+	claimNormalChest:FireServer(unpack({"NormalChest", ""}))
+	print("Claimed")
    end
 })
 
