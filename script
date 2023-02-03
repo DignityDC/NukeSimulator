@@ -1,5 +1,6 @@
 local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/main/Library.lua"))()
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua'))()
+local equipBestRemote = game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.NukeService.RE.EquipBest
 Library.Theme = "Dark"
 local Flags = Library.Flags
 
@@ -143,11 +144,24 @@ Section4:Slider({
 })
 
 Section4:Toggle({
+   Text = "Auto Equip Best",
+   Callback = function(bool)
+      autoEquip = bool
+   end
+})
+
+Section4:Toggle({
    Text = "Auto Collect",
    Callback = function(bool)
    	      autoCollecting = bool
    end
 })
+
+game:GetService("RunService").Stepped:Connect(function()
+  if autoEquip then
+    equipBestRemote:FireServer()
+  end
+end)
 
 game:GetService("RunService").Stepped:Connect(function()
   if autoCollecting then
