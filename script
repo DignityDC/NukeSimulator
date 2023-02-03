@@ -49,6 +49,10 @@ local SectionM = Tab:Section({
    Text = "Specific Teleports"
 })
 
+local SectionMM = Tab2:Section({
+   Text = "Specific Teleports"
+})
+
 SectionM:Button({
    Text = "Shiny Machine",
    Callback = function()
@@ -70,7 +74,7 @@ SectionM:Button({
    end
 })
 
-SectionM:Button({
+SectionMM:Button({
    Text = "Enchanter",
    Callback = function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3832, 854, 3265)
