@@ -1,0 +1,124 @@
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Unnamed/main/Library.lua'))()
+Library.Theme = "Dark"
+local Flags = Library.Flags
+
+local Window = Library:Window({
+   Text = "Nuke Simulator"
+})
+
+local Tab = Window:Tab({
+   Text = "Earth"
+})
+
+local Tab2 = Window:Tab({
+   Text = "Moon"
+})
+
+local Tab3 = Window:Tab({
+   Text = "The Future"
+})
+
+local Section = Tab:Section({
+   Text = "Teleports"
+})
+
+local Section2 = Tab2:Section({
+   Text = "Teleports"
+})
+
+local Section3 = Tab3:Section({
+   Text = "Teleports"
+})
+
+Section:Button({
+   Text = "Nuke Shop",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3988, 638, -4273)
+   end
+})
+
+Section:Button({
+   Text = "City",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3882, 636, -3726)
+   end
+})
+
+Section:Button({
+   Text = "Jungle",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3958, 635, -3376)
+   end
+})
+
+Section:Button({
+   Text = "Desert",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4354, 635, -3115)
+   end
+})
+
+Section:Button({
+   Text = "Beach",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4897, 635, -2856)
+   end
+})
+
+Section:Button({
+   Text = "Site Deep Blue",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(11293, 105, -3086)
+   end
+})
+
+Section:Button({
+   Text = "Test Lab 33",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4342, 637, -2181)
+   end
+})
+
+Section:Button({
+   Text = "Volcano HQ",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4006, 637, -2041)
+   end
+})
+
+Section2:Button({
+   Text = "Moon Base",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3767, 855, 3335)
+   end
+})
+
+Section2:Button({
+   Text = "Excavation Site 42",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3773, 857, 3169)
+   end
+})
+
+Section2:Button({
+   Text = "Dark Side Station",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1346, 837, 3400)
+   end
+})
+
+Section2:Button({
+   Text = "Dark Lab 33",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1747, 837, 3343)
+   end
+})
+
+Section3:Button({
+   Text = "Cybertopia",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8316, 1581, 1542)
+   end
+})
+
+Tab:Select()
