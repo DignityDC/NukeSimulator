@@ -21,6 +21,10 @@ local Tab3 = Window:Tab({
    Text = "The Future"
 })
 
+local Tab4 = Window:Tab({
+   Text = "Misc"
+})
+
 local Section = Tab:Section({
    Text = "Teleports"
 })
@@ -31,6 +35,10 @@ local Section2 = Tab2:Section({
 
 local Section3 = Tab3:Section({
    Text = "Teleports"
+})
+
+local Section4 = Tab4:Section({
+   Text = "Misc"
 })
 
 Section:Button({
@@ -123,5 +131,21 @@ Section3:Button({
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8316, 1581, 1542)
    end
 })
+
+Section4:Toggle({
+   Text = "Auto Collect",
+   Callback = function(bool)
+   	      autoCollecting = bool
+   end
+})
+
+game:GetService("RunService").Stepped:Connect(function()
+  if autoCollecting then
+    for _, drop in pairs(game:GetService("Workspace").CurrencyDrops:GetChildren()) do
+      drop.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+      drop:Destroy()
+    end
+  end
+end)
 
 Tab:Select()
