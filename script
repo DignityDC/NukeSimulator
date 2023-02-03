@@ -45,6 +45,38 @@ local Section4 = Tab4:Section({
    Text = "Misc"
 })
 
+local SectionM = Tab:Section({
+   Text = "Specific Teleports"
+})
+
+SectionM:Button({
+   Text = "Shiny Machine",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4100, 635, -4142)
+   end
+})
+
+SectionM:Button({
+   Text = "Player Upgrades",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3851, 639, -3677)
+   end
+})
+
+SectionM:Button({
+   Text = "Rainbow Machine",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4876, 635, -2819)
+   end
+})
+
+SectionM:Button({
+   Text = "Enchanter",
+   Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3832, 854, 3265)
+   end
+})
+
 Section:Button({
    Text = "Nuke Shop",
    Callback = function()
