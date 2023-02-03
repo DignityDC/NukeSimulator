@@ -132,6 +132,16 @@ Section3:Button({
    end
 })
 
+Section4:Slider({
+   Text = "Speed",
+   Default = 16,
+   Minimum = 10,
+   Maximum = 300,
+   Callback = function(speed)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+   end
+})
+
 Section4:Toggle({
    Text = "Auto Collect",
    Callback = function(bool)
