@@ -142,6 +142,14 @@ Section4:Button({
    end
 })
 
+Section4:Button({
+   Text = "AntiAFK",
+   Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+	NotificationLibrary:SendNotification("Success", "AntiAFK is now enabled", 3)
+   end
+})
+
 Section4:Slider({
    Text = "Speed",
    Default = 25,
