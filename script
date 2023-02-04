@@ -204,6 +204,28 @@ Section4:Toggle({
    end
 })
 
+Section4:Toggle({
+    Text = "AntiAFK",
+    Callback = function(bool)
+        antiAfkEnabled = bool
+        if antiAfkEnabled then
+            local lastInput = tick()
+            game:GetService("Players").LocalPlayer.Idled:connect(function()
+                if tick() - lastInput > 300 then -- 5 minutes
+                    game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+                end
+            end)
+            game:GetService("UserInputService").InputBegan:Connect(function()
+                lastInput = tick()
+            end)
+            game:GetService("UserInputService").InputEnded:Connect(function()
+                lastInput = tick()
+            end)
+        end
+    end
+})
+
+
 game:GetService("RunService").Stepped:Connect(function()
   if autoEquip then
     equipBestRemote:FireServer()
