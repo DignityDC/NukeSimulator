@@ -191,6 +191,15 @@ Section4:Slider({
 })
 
 Section4:Toggle({
+   Text = "Mod Detection",
+   Callback = function(bool)
+      if bool then
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/DignityDC/modcheck/main/script'))()
+      end
+   end
+})
+
+Section4:Toggle({
    Text = "Auto Equip Best",
    Callback = function(bool)
       autoEquip = bool
