@@ -180,6 +180,13 @@ Section4:Button({
    end
 })
 
+Section4:Button({
+   Text = "Infinite Yeild",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end
+})
+
 Section4:Slider({
    Text = "Speed",
    Default = 25,
