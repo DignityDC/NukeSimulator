@@ -184,7 +184,7 @@ Section4:Slider({
    Text = "Speed",
    Default = 25,
    Minimum = 10,
-   Maximum = 300,
+   Maximum = 420,
    Callback = function(speed)
       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
    end
