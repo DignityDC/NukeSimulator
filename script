@@ -194,6 +194,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/
    end
 })
 
+Section4:Button({
+   Text = "Rejoin Server",
+   Callback = function()
+	game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+   end
+})
+
 Section4:Slider({
    Text = "Speed",
    Default = 25,
@@ -247,7 +254,6 @@ Section4:Toggle({
         end
     end
 })
-
 
 game:GetService("RunService").Stepped:Connect(function()
   if autoEquip then
