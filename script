@@ -188,7 +188,7 @@ Section4:Button({
 })
 
 Section4:Button({
-   Text = "Infinite Yeild",
+   Text = "Infinite Yield",
    Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end
