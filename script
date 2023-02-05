@@ -172,6 +172,13 @@ Section3:Button({
    end
 })
 
+Section3:Button({
+   Text = "Vapor Valley",
+   Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8354, 1580, 1077)
+   end
+})
+
 Section4:Button({
    Text = "Auto Claim Chests",
    Callback = function()
