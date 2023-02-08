@@ -201,6 +201,13 @@ Section4:Button({
    end
 })
 
+Section4:Button({
+   Text = "Black Detector",
+   Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/DignityDC/modcheck/main/blackdetector'))()
+   end
+})
+
 Section4:Slider({
    Text = "Speed",
    Default = 25,
