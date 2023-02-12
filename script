@@ -179,6 +179,13 @@ Section3:Button({
    end
 })
 
+Section3:Button({
+   Text = "Cyber Bridge",
+   Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8323, 1579, 683)
+   end
+})
+
 Section4:Button({
    Text = "Auto Claim Chests",
    Callback = function()
