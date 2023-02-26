@@ -193,6 +193,13 @@ Section3:Button({
    end
 })
 
+Section3:Button({
+   Text = "Arcade",
+   Callback = function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(12853, -357, 298)
+   end
+})
+
 Section4:Button({
    Text = "Auto Claim Chests",
    Callback = function()
